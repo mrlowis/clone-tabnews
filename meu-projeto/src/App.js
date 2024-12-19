@@ -1,25 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import udmImage from './udmbb.png'; // Certifique-se de salvar sua imagem em `src`
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function Home() {
+    return (
+        <div style={{ backgroundColor: '#000', color: '#fff', textAlign: 'center', padding: '20px' }}>
+            <h1>Vai tomar no cu Portal RPG!</h1>
+            <p>
+                Vem pro <a href="https://universodomedo.com" style={{ color: '#fff' }}>UDM</a>, porra!
+            </p>
+            <img src={udmImage} alt="Imagem UDM" style={{ width: '100%', height: 'auto' }} />
+        </div>
+    );
 }
 
-export default App;
+export default Home;
